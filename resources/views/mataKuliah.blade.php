@@ -36,6 +36,20 @@
     </div>
   </div>
 </nav>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Nama Mata Kuliah</th>
+      <th scope="col">Kelas</th>
+    </tr>
+  </thead>
+  <tbody>
+        @foreach ($mk as $detailMhs)
+        <tr><td> {{ $detailMhs['nama'] }} </td><td> {{ $detailMhs['kelas'] }} </td></tr><br>
+        @endforeach
+  </tbody>
+</table>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->

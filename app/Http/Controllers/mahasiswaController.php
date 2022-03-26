@@ -11,15 +11,15 @@ class mahasiswaController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-private $mhs =[
-            1=> ['nama' => 'Budiono', 'jurusan' => 'Sistem Informasi'],
-            2=> ['nama' => 'Susanti', 'jurusan' => 'Sistem Informasi'],
-            3=> ['nama' => 'Steven', 'jurusan' => 'Informatika']
-         ];
+private $mk =[
+            1=> ['nama' => 'Technopreneurship', 'kelas' => 'Kelas Pagi'],
+            2=> ['nama' => 'Pancasila', 'kelas' => 'Kelas Pagi'],
+            3=> ['nama' => 'Metodologi Penelitian', 'kelas' => 'Kelas Malam']]
+         ;
 
     public function index()
     {
-        return view ('listMahasiswa') ->with('mhs', $this->mhs);
+        return view ('mataKuliah') ->with('mk', $this->mk);
     }
 
     /**
@@ -29,7 +29,7 @@ private $mhs =[
      */
     public function create()
     {
-        return view ('createMahasiswa');
+        return view ('tambahMataKuliah');
     }
 
     /**

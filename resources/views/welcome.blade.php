@@ -26,7 +26,7 @@
           <a class="nav-link" href="/mataKuliah">List Mata Kuliah</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/tambahMataKuliah">Tambah Mahasiswa</a>
+          <a class="nav-link" href="/tambahMataKuliah">Tambah Mata Kuliah</a>
         </li>
       </ul>
       <form class="d-flex">
@@ -36,6 +36,8 @@
     </div>
   </div>
 </nav>
+<a class="nav-link" href="/mataKuliah">List Mata Kuliah</a>
+<a class="nav-link" href="/tambahMataKuliah">Tambah Mata Kuliah</a>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->

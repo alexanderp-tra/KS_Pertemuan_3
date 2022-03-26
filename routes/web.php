@@ -17,9 +17,9 @@ Route::get('/', function () {
     return view('welcome', ['nama'=>'Elbert', 'jurusan' => 'Sistem Informasi']);
 });
 
-Route::get('/mahasiswa', [mahasiswaController::class, 'index']);
+Route::get('/mataKuliah', [mahasiswaController::class, 'index']);
 
-Route::get('/mahasiswa/create', [mahasiswaController::class, 'create']);
+Route::get('/tambahMataKuliah', [mahasiswaController::class, 'create']);
  
 // Route::get('/mahasiswa', function () {
 //     $mhs =[
